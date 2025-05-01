@@ -1,0 +1,16 @@
+name: NaverSearchMCP
+schema_version: 1.0
+
+tools:
+  - name: naver_search
+    description: 네이버 API를 사용하여 뉴스를 검색합니다.
+    type: http
+    endpoint: "https://openapi.naver.com/v1/search/news.json"
+    method: GET
+    headers:
+      X-Naver-Client-Id: "_YtyH9E7lIgobfBQua_6"
+      X-Naver-Client-Secret: "ZcyqEietEL"
+    params:
+      query: "{{input}}"
+      display: 5
+      sort: date
