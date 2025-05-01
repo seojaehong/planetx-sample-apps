@@ -1,7 +1,2 @@
-FROM node:18-alpine
-
-WORKDIR /app
-COPY . .
-
-RUN npm install
-CMD ["npm", "start"]
+FROM alpine/curl
+CMD ["sh"]
